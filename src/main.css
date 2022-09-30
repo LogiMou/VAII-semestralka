@@ -1,0 +1,65 @@
+#logo{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.top-page {
+    border: 3px solid blue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.action-menu {
+    padding-left: 50px;
+    text-align: center;
+}
+
+a.action-menu {
+    display: inline-block;
+    text-decoration: none;
+    padding: 120px;
+    margin: 42px;
+}
+
+.side-description {
+    border: 3px solid blue;
+    width: 15%;
+    padding: 20px;
+    float: left;
+}
+
+.main-border {
+    border: 3px solid orange;
+    float: left;
+    overflow: auto;
+}
+
+.items {
+    border: 3px solid red;
+    width: 60%;
+    float: left;
+    padding-left: 5%;
+}
+
+.item {
+    width: 200px;
+    margin: 5px;
+    border: 3px solid purple;
+    float: left;
+}
+
+.item:hover {
+    border: 1px solid #777;
+}
+
+div.item img {
+    width: 100%;
+    height: auto;
+}
+
+div.description {
+    padding: 15px;
+    text-align: center;
+}
