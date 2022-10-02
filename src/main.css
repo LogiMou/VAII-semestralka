@@ -3,17 +3,42 @@
     border-radius: 50%;
 }
 
+body div {
+    padding: 20px;
+}
+
+body {
+    background-color: rgb(210, 208, 186);
+}
+
 .top-page {
-    border: 3px solid blue;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+    text-align: center;
 }
 
 .action-menu {
+    width: 80%;
     padding-left: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(185, 180, 186);
+}
+
+.action-btn {
+    padding: 10px;
+    width: 100px;
     text-align: center;
+    border-radius: 30px;
+    background-color: rgb(94, 116, 127);
+    text-decoration: none;
+}
+
+.action-btn:hover {
+    background-color: rgb(100, 134, 127);
 }
 
 a.action-menu {
@@ -24,30 +49,34 @@ a.action-menu {
 }
 
 .side-description {
-    border: 3px solid blue;
     width: 15%;
     padding: 20px;
     float: left;
 }
 
 .main-border {
-    border: 3px solid orange;
-    float: left;
     overflow: auto;
+
+}
+
+.main-border > div {
+    border-radius: 30px;
+    background-color: rgb(255, 240, 229);
 }
 
 .items {
-    border: 3px solid red;
     width: 60%;
     float: left;
     padding-left: 5%;
 }
 
 .item {
+    background-color: rgb(185, 180, 186);
     width: 200px;
     margin: 5px;
     border: 3px solid purple;
     float: left;
+    border-radius: 30px;
 }
 
 .item:hover {
