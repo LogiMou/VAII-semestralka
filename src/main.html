@@ -1,133 +1,257 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PillowShop</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="top-page">
-        <div class="contact-links">
-            <a href="mailto:pillowShop@gmail.com" class="left">Napíšte nám</a>
-            <a href="#" class="fa fa-facebook right socials"></a>
-            <a href="#" class="fa fa-google right socials"></a>
-            <a href="#" class="fa fa-instagram right socials"></a>
+<div class="top-page">
+    <div class="contact-links">
+        <a href="mailto:pillowShop@gmail.com" class="left">Napíšte nám</a>
+        <a href="#" class="fa fa-facebook right socials"></a>
+        <a href="#" class="fa fa-google right socials"></a>
+        <a href="#" class="fa fa-instagram right socials"></a>
+    </div>
+    <div class="nav-menu">
+        <div class="main-banner">
+            <img src="../img/logo.png" alt="Logo-firmy" id="logo">
         </div>
-        <div class="nav-menu">
-            <div class="main-banner">
-                <img src="../img/logo.png" alt="Logo-firmy" id="logo">
+        <div class="action-menu">
+            <a href="vankuse.html" class="action-btn">Vankuse</a>
+            <a href="vankuse.html" class="action-btn">Deky</a>
+            <a href="vankuse.html" class="action-btn">Dekoracie</a>
+            <a href="../login-page.html" class="action-btn">
+                <i class="fa fa-user user-icon"></i>
+                <p>Prihlasíť sa</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="main">
+    <!--    USED FROM BOOTSTRAP-->
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://placeimg.com/1640/480/any" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>What is Lorem Ipsum?</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's.</p>
+                </div>
             </div>
-            <div class="action-menu">
-                <a href="vankuse.html" class="action-btn">Vankuse</a>
-                <a href="vankuse.html" class="action-btn">Deky</a>
-                <a href="vankuse.html" class="action-btn">Dekoracie</a>
-                <a href="../login-page.html" class="action-btn">
-                    <i href="../login-page.html" class="fa fa-user user-icon"></i>
-                    <p>Prihlasíť sa</p>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://placeimg.com/1640/480/any" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>What is Lorem Ipsum?</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://placeimg.com/1640/480/any" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>What is Lorem Ipsum?</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="main-border">
+
+        <div class="latest-products-heading">
+            <h3>Najnovšie produkty</h3>
+        </div>
+
+        <div class="items">
+            <div class="item">
+                <a href="/img/logo.jpg">
+                    <img src="https://placeimg.com/200/150/any" alt="Picture">
                 </a>
+                <div class="product-name">
+                    <a href="../product-detail.html">Lorem Ipsum is simply dummy text</a>
+                </div>
+                <div class="price product-name">
+                    12€
+                </div>
+                <div class="product-name add-to-cart-btn">
+                    <i class="fa fa-shopping-cart"></i>
+                    <a href="../add-to-cart">Pridaj do košíka</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="/img/logo.jpg">
+                    <img src="https://placeimg.com/200/150/any" alt="Picture">
+                </a>
+                <div class="product-name">
+                    <a href="../product-detail.html">Lorem Ipsum is simply dummy text</a>
+                </div>
+                <div class="price product-name">
+                    12€
+                </div>
+                <div class="product-name add-to-cart-btn">
+                    <i class="fa fa-shopping-cart"></i>
+                    <a href="../add-to-cart">Pridaj do košíka</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="/img/logo.jpg">
+                    <img src="https://placeimg.com/200/150/any" alt="Picture">
+                </a>
+                <div class="product-name">
+                    <a href="../product-detail.html">Lorem Ipsum is simply dummy text</a>
+                </div>
+                <div class="price product-name">
+                    12€
+                </div>
+                <div class="product-name add-to-cart-btn">
+                    <i class="fa fa-shopping-cart"></i>
+                    <a href="../add-to-cart">Pridaj do košíka</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="/img/logo.jpg">
+                    <img src="https://placeimg.com/200/150/any" alt="Picture">
+                </a>
+                <div class="product-name">
+                    <a href="../product-detail.html">Lorem Ipsum is simply dummy text</a>
+                </div>
+                <div class="price product-name">
+                    12€
+                </div>
+                <div class="product-name add-to-cart-btn">
+                    <i class="fa fa-shopping-cart"></i>
+                    <a href="../add-to-cart">Pridaj do košíka</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="/img/logo.jpg">
+                    <img src="https://placeimg.com/200/150/any" alt="Picture">
+                </a>
+                <div class="product-name">
+                    <a href="../product-detail.html">Lorem Ipsum is simply dummy text</a>
+                </div>
+                <div class="price product-name">
+                    12€
+                </div>
+                <div class="product-name add-to-cart-btn">
+                    <i class="fa fa-shopping-cart"></i>
+                    <a href="../add-to-cart">Pridaj do košíka</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="/img/logo.jpg">
+                    <img src="https://placeimg.com/200/150/any" alt="Picture">
+                </a>
+                <div class="product-name">
+                    <a href="../product-detail.html">Lorem Ipsum is simply dummy text</a>
+                </div>
+                <div class="price product-name">
+                    12€
+                </div>
+                <div class="product-name add-to-cart-btn">
+                    <i class="fa fa-shopping-cart"></i>
+                    <a href="../add-to-cart">Pridaj do košíka</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="/img/logo.jpg">
+                    <img src="https://placeimg.com/200/150/any" alt="Picture">
+                </a>
+                <div class="product-name">
+                    <a href="../product-detail.html">Lorem Ipsum is simply dummy text</a>
+                </div>
+                <div class="price product-name">
+                    12€
+                </div>
+                <div class="product-name add-to-cart-btn">
+                    <i class="fa fa-shopping-cart"></i>
+                    <a href="../add-to-cart">Pridaj do košíka</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="/img/logo.jpg">
+                    <img src="https://placeimg.com/200/150/any" alt="Picture">
+                </a>
+                <div class="product-name">
+                    <a href="../product-detail.html">Lorem Ipsum is simply dummy text</a>
+                </div>
+                <div class="price product-name">
+                    12€
+                </div>
+                <div class="product-name add-to-cart-btn">
+                    <i class="fa fa-shopping-cart"></i>
+                    <a href="../add-to-cart">Pridaj do košíka</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <a href="/img/logo.jpg">
+                    <img src="https://placeimg.com/200/150/any" alt="Picture">
+                </a>
+                <div class="product-name">
+                    <a href="../product-detail.html">Lorem Ipsum is simply dummy text</a>
+                </div>
+                <div class="price product-name">
+                    12€
+                </div>
+                <div class="product-name add-to-cart-btn">
+                    <i class="fa fa-shopping-cart"></i>
+                    <a href="../add-to-cart">Pridaj do košíka</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="main">
-        <!--    USED FROM BOOTSTRAP-->
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="https://placeimg.com/1640/480/any" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>What is Lorem Ipsum?</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="https://placeimg.com/1640/480/any" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>What is Lorem Ipsum?</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="https://placeimg.com/1640/480/any" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>What is Lorem Ipsum?</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+</div>
 
-        <div class="main-border">
-            <div class="side-description">
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            </div>
-            <div class="items">
-                <div class="item">
-                    <a href="/img/logo.jpg">
-                        <img src="../img/logo.jpg" alt="Picture">
-                    </a>
-                    <div class="description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                    </div>
-                </div>
+<div class="bottom-info">
+    <ul class="shopping">
+        Všetko o nákupe
+        <li>Možnosti doručenia</li>
+        <li>Možnosti platby</li>
+        <li>Nákup na splátky</li>
+        <li>Nákup bez DPH</li>
+        <li>Predajná sieť</li>
+        <li>Obchodné podmienky</li>
+    </ul>
 
-                <div class="item">
-                    <a href="/img/logo.jpg">
-                        <img src="../img/logo.jpg" alt="Picture">
-                    </a>
-                    <div class="description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                    </div>
-                </div>
-
-                <div class="item">
-                    <a href="/img/logo.jpg">
-                        <img src="../img/logo.jpg" alt="Picture">
-                    </a>
-                    <div class="description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                    </div>
-                </div>
-
-                <div class="item">
-                    <a href="/img/logo.jpg">
-                        <img src="../img/logo.jpg" alt="Picture">
-                    </a>
-                    <div class="description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                    </div>
-                </div>
-
-                <div class="item">
-                    <a href="/img/logo.jpg">
-                        <img src="../img/logo.jpg" alt="Picture">
-                    </a>
-                    <div class="description">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <ul class="orders">
+        Všetko o nákupe
+        <li>Možnosti doručenia</li>
+        <li>Možnosti platby</li>
+        <li>Nákup na splátky</li>
+        <li>Nákup bez DPH</li>
+        <li>Predajná sieť</li>
+        <li>Obchodné podmienky</li>
+    </ul>
+</div>
 </body>
 </html>
