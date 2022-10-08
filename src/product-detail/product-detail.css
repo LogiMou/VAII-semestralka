@@ -1,0 +1,262 @@
+.shadow {
+    box-shadow: 0px -3px 5px 6px #777777;
+}
+
+.breadcrumbs {
+    margin: 30px;
+    display: block;
+}
+
+.breadcrumb-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+    list-style: none;
+}
+
+.link {
+    font-size: small;
+    text-decoration: none;
+    color: #777777;
+    transition: 0.5s;
+}
+
+.link:hover {
+    color: rgb(242, 124, 5);
+}
+
+.item-main {
+    justify-content: space-between;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    /*padding-right: 15%;*/
+    /*padding-left: 15%;*/
+}
+
+.item-overview {
+    /*border: #777777 solid 3px;*/
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.heading {
+    font-size: medium;
+    text-align: center;
+    border-bottom: #eee solid 2px;
+}
+
+/*.product-left {*/
+/*    padding: 20px;*/
+/*}*/
+
+.container
+{
+    max-width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.trans
+{
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+.top
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-picture {
+    width: auto;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.top ul
+{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+}
+.top ul li
+{
+    position: relative;
+    float: left;
+    width: auto;
+    height: auto;
+    max-height: 100px;
+    max-width: 100px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.top ul li::before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    content: '';
+    color: white;
+    opacity: 0.4;
+    text-align: center;
+    box-sizing: border-box;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.top ul li:hover::before
+{
+    opacity: 0;
+    background-color: rgba(0,0,0,0.90);
+}
+.top ul li img
+{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.lightbox
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+}
+.lightbox img
+{
+    max-width: 90%;
+    max-height: 80%;
+    position: relative;
+    top: -100%;
+    /* Transition */
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+.lightbox:target
+{
+    outline: none;
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -ms-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    -webkit-transition: all 1.2s ease;
+}
+.lightbox:target img
+{
+    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.buy-border {
+    border: #eee solid 2px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+}
+
+.buy-border ul {
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: #eee solid 1px;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: white;
+    border: rgb(242, 124, 5) solid 1px;
+    color: black;
+    border-radius: 30px;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 160px;
+    height: 60px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    color: rgb(242, 124, 5);
+}
+
+.product-right:hover .add-to-cart-btn {
+    background-color: rgb(242, 124, 5);
+}
+
+.product-right:hover .add-to-cart-btn i {
+    color: white;
+}
+
+.product-right:hover .add-to-cart-btn > a {
+    color: white; !important;
+}
