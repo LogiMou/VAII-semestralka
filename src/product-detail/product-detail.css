@@ -28,9 +28,10 @@
 }
 
 .item-main {
-    justify-content: space-between;
     margin-top: 50px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     flex-direction: row;
     /*padding-right: 15%;*/
     /*padding-left: 15%;*/

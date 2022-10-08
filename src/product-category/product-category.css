@@ -1,0 +1,13 @@
+.right-panel > .info-text {
+    width:250px; /* or whatever width you want. */
+    max-width:250px; /* or whatever width you want. */
+    display: inline-block;
+}
+
+.right-panel {
+    max-height: 700px;
+}
+
+.items-right-panel > .items {
+    margin: auto;
+}
