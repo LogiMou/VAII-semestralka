@@ -1,0 +1,30 @@
+.top-heading {
+    /*display: flex;*/
+}
+
+.row-items {
+    /*border: #777777 solid 3px;*/
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.row-item:hover {
+    border: rgb(242, 124, 5) solid 2px;
+}
+
+.row-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-item > * {
+    margin: 10px;
+}
+
+.action-btns > * {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+
+}
