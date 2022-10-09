@@ -11,3 +11,11 @@
 .items-right-panel > .items {
     margin: auto;
 }
+
+/*STYLING FOR MOBILE PHONE*/
+@media (max-width: 600px) {
+    .items-right-panel {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

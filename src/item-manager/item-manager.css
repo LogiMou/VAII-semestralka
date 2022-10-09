@@ -28,3 +28,15 @@
     margin: 5px;
 
 }
+
+/*STYLING FOR MOBILE PHONE*/
+@media (max-width: 600px) {
+    .row-item {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .row-item:nth-child(2) {
+        text-align: center;
+    }
+}
