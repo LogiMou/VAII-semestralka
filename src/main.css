@@ -266,7 +266,7 @@ div.product-name > a {
 }
 
 .item:hover .add-to-cart-btn > a {
-    color: white; !important
+    color: white !important;
 }
 
 div.item img {
