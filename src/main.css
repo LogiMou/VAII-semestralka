@@ -11,6 +11,13 @@
 .m-bottom-30 {
     margin-bottom: 30px;
 }
+
+.m-left-10 {
+    margin-left: 10px;
+}
+.m-10 {
+    margin: 10px;
+}
 .p-30 {
     padding: 30px;
 }
@@ -152,6 +159,37 @@ a.action-menu {
     color: black;
 }
 
+.modal-content .heading {
+    border-bottom: none;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.modal-content > .row-items {
+    flex-wrap: nowrap;
+    padding: unset;
+}
+
+.modal-content > .row-items > .item {
+    border: none;
+    width: 90%;
+    margin: 0 0 0 10px;
+}
+
+.modal-content > .items {
+    border-top: #eeee solid 1px;
+    padding: 10px;
+    flex-wrap: nowrap;
+    margin: 0;
+}
+
 
 #logo{
     height: auto;
@@ -167,36 +205,17 @@ body {
     padding: 0 !important;
 }
 
-/*CAROUSEL FROM BOOTSTRAP*/
-.carousel .carousel-item {
-    height: 480px;
-}
-
-.carousel-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 480px;
-}
-/*MAIN ITEMS*/
-/*ked chcem aby sa mi itemy ukladali za sebou tak pouzijem posledne 3 prikazy*/
-/*a ked chcem aby sa mi roztiahli cez cele pole tak namiesto flex-wrap = nowrap*/
-/*a flex-shrink =1*/
 .items {
     margin: 50px 200px 0px 200px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /*flex-shrink: 0;*/
 }
 
 .item {
-    /*width: calc(100% - 200px);*/
     width: 300px;
     float: left;
     margin: 20px;
-    /*border: 3px solid purple;*/
-    /*border-radius: 12px;*/
     align-items: center;
     transition: 0.5s;
 }
@@ -271,6 +290,18 @@ div.item img {
     margin-left: 100px;
 }
 
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+@media (max-width: 1300px) {
+    .items {
+        margin: unset;
+    }
+}
+
 /*STYLING FOR MOBILE PHONE*/
 @media (max-width: 600px) {
     .action-menu {
@@ -291,5 +322,9 @@ div.item img {
 
     .item {
         border-bottom: #eee solid 2px;
+    }
+
+    .action-menu {
+        /*display: none;*/
     }
 }

@@ -14,6 +14,7 @@
     padding: 0;
     gap: 8px;
     list-style: none;
+    white-space: nowrap;
 }
 
 .link {
@@ -57,6 +58,7 @@
 /*    padding: 20px;*/
 /*}*/
 
+
 .container
 {
     max-width: 750px;
@@ -87,22 +89,25 @@
 
 .top ul
 {
-    list-style: none;
     width: 100%;
     height: 100%;
     z-index: 1;
     box-sizing: border-box;
+    margin-top: 10px;
+    padding: unset;
+    text-align: center;
 }
 .top ul li
 {
     position: relative;
-    float: left;
     width: auto;
     height: auto;
     max-height: 100px;
     max-width: 100px;
     overflow: hidden;
     margin: 5px;
+
+    display: inline-block;
 }
 
 .top ul li::before
@@ -185,6 +190,14 @@
     -webkit-transform: translateY(-50%);
 }
 
+.picuter-items {
+
+}
+
+.picuter-items > * {
+    align-items: center;
+}
+
 .buy-border {
     border: #eee solid 2px;
     border-radius: 10px;
@@ -217,7 +230,7 @@
 }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
+.buy-border .dropdown {
     margin-top: 20px;
     position: relative;
     display: inline-block;
@@ -231,6 +244,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-left: 100px;
 }
 
 /* Links inside the dropdown */
