@@ -1,4 +1,4 @@
-/*UNIVERSAL CLASSES*/
+/*UNIVERSAL CSS CLASSES*/
 .m-top-30 {
     margin-top: 30px;
 }
@@ -61,13 +61,11 @@
     padding: 30px;
 }
 
-.main-border {
-    margin-top: 30px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+.shadow {
+    box-shadow: 0px -3px 5px 6px #777777;
 }
+
+
 
 .latest-products-heading {
     text-align: left;
@@ -75,6 +73,13 @@
     border-bottom: #eee solid 2px;
 }
 
+.main-border {
+    margin-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /*TOP CONTACT PANEL*/
 .top-page {
@@ -120,6 +125,13 @@
     margin: 0;
 }
 
+#logo{
+    height: auto;
+    width: auto;
+    max-height: 80px;
+    max-width: 80px;
+}
+
 .main-banner {
     float: left;
     margin: 0px 0px 0px 15px;
@@ -143,14 +155,12 @@ a.action-menu {
     text-align: center;
     line-height: 80px;
     width: 100%;
-    /*height: 100%;*/
     color: black;
     font-weight: 900;
     transition: 0.5s;
 }
 
 .action-btn:hover {
-    /*color: rgb(242, 124, 5);*/
     color: white;
     background-color: rgb(242, 124, 5);
 }
@@ -163,6 +173,7 @@ a.action-menu {
     border-bottom: none;
 }
 
+/*MODAL WINDOW*/
 input[type=text], input[type=password] {
     width: 100%;
     padding: 8px 20px;
@@ -190,14 +201,6 @@ input[type=text], input[type=password] {
     margin: 0;
 }
 
-
-#logo{
-    height: auto;
-    width: auto;
-    max-height: 80px;
-    max-width: 80px;
-}
-
 /*WHOLE BODY STYLING*/
 body {
     font-family: "Sora", sans-serif;
@@ -205,6 +208,7 @@ body {
     padding: 0 !important;
 }
 
+/*BOX ITEMS*/
 .items {
     margin: 50px 200px 0px 200px;
     display: flex;
@@ -290,12 +294,12 @@ div.item img {
     margin-left: 100px;
 }
 
-/* Style the active link (or home/logo) */
 .active {
     background-color: #04AA6D;
     color: white;
 }
 
+/*STYLING FOR BIGGER SCREENS/TABLES*/
 @media (max-width: 1300px) {
     .items {
         margin: unset;
@@ -312,8 +316,8 @@ div.item img {
 
     .nav-menu {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-flow: column;
+        align-items: center;
     }
 
     .items {
@@ -322,9 +326,5 @@ div.item img {
 
     .item {
         border-bottom: #eee solid 2px;
-    }
-
-    .action-menu {
-        /*display: none;*/
     }
 }

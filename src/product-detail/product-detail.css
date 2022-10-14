@@ -1,7 +1,4 @@
-.shadow {
-    box-shadow: 0px -3px 5px 6px #777777;
-}
-
+/*BRADCRUMBS*/
 .breadcrumbs {
     margin: 30px;
     display: block;
@@ -28,14 +25,13 @@
     color: rgb(242, 124, 5);
 }
 
+/*IMAGES AND BUY BOX*/
 .item-main {
     margin-top: 50px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-    /*padding-right: 15%;*/
-    /*padding-left: 15%;*/
 }
 
 .description .item-main {
@@ -43,7 +39,6 @@
 }
 
 .item-overview {
-    /*border: #777777 solid 3px;*/
     padding-right: 30px;
     padding-left: 30px;
 }
@@ -54,11 +49,7 @@
     border-bottom: #eee solid 2px;
 }
 
-/*.product-left {*/
-/*    padding: 20px;*/
-/*}*/
-
-
+/*IMAGES*/
 .container
 {
     max-width: 750px;
@@ -106,7 +97,6 @@
     max-width: 100px;
     overflow: hidden;
     margin: 5px;
-
     display: inline-block;
 }
 
@@ -190,14 +180,11 @@
     -webkit-transform: translateY(-50%);
 }
 
-.picuter-items {
-
-}
-
 .picuter-items > * {
     align-items: center;
 }
 
+/*BUY BOX*/
 .buy-border {
     border: #eee solid 2px;
     border-radius: 10px;
@@ -214,7 +201,8 @@
     border-bottom: #eee solid 1px;
 }
 
-/* Style The Dropdown Button */
+
+/*DROPDOWN*/
 .dropbtn {
     background-color: white;
     border: rgb(242, 124, 5) solid 1px;
@@ -229,14 +217,12 @@
     transition: 0.5s;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .buy-border .dropdown {
     margin-top: 20px;
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -247,7 +233,6 @@
     margin-left: 100px;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -255,15 +240,12 @@
     display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     color: rgb(242, 124, 5);
 }

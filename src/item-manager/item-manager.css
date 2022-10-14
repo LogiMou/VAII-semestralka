@@ -1,9 +1,5 @@
-.top-heading {
-    /*display: flex;*/
-}
-
+/*STYLING FOR ROW ITEMS*/
 .row-items {
-    /*border: #777777 solid 3px;*/
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -29,13 +25,11 @@
 }
 
 .image-div {
-    /*width: 50%;*/
     max-width: 250px;
     min-width: 200px;
 }
 
 .image {
-    /*width: 50%;*/
     width: 100%;
 }
 
@@ -45,10 +39,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
 }
 
+/*BUTTONS FOR EDIT/DELETE/ADD*/
 .edit-btn {
     border: #C98706 solid 3px;
     border-radius: 10px;
@@ -64,7 +59,6 @@
 }
 
 .delete-btn {
-    /*border: #C98706 solid 3px;*/
     border: none;
     border-radius: 10px;
     background-color: #C98706;
