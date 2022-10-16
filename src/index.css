@@ -255,6 +255,7 @@ div.product-name > a {
     margin-right: 20px;
 }
 
+/*https://stackoverflow.com/questions/8900245/css3-box-shadow-property-doesnt-validate*/
 .item:hover {
     border: rgb(242, 124, 5) solid 1px;
     border-radius: 4px;
@@ -278,7 +279,6 @@ div.item img {
     height: auto;
     margin: 10px;
     border-radius: 30px;
-    /*border: #777777 solid 3px;*/
 }
 
 /*BOTTOM STYLING*/
